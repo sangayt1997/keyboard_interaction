@@ -1,7 +1,8 @@
 import React from 'react';
 import {ScrollView, StatusBar} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {NativeBaseProvider, Text, theme} from 'native-base';
+import {NativeBaseProvider, theme} from 'native-base';
+import Landing from './src/screen/landing/landing';
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
             backgroundColor="transparent"
             barStyle="dark-content"
           />
-          <Text>Keyboard interaction</Text>
+          <Landing />
         </NativeBaseProvider>
       </ScrollView>
     </SafeAreaProvider>
